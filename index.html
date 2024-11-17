@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap"
       rel="stylesheet"
     />
     <title>Amindi App</title>
@@ -15,21 +15,32 @@
   <body>
     <div class="weather-app">
       <header>
-        <form action="">
-          <input type="search" placeholder="Enter a city.." required id="" />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Madrid</h1>
-          <p>
-            Sunday 18:56, Partly cloudy
-            <br />
-            Humidity: 74%, Wind: 2km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Madrid</h1>
+            <p class="weather-app-details">
+              Sunday 18:56, Partly cloudy
+              <br />
+              Humidity:<strong>74%</strong>, Wind:<strong>2km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>☀️ 12 °C</div>
       </main>
 
       <footer>
