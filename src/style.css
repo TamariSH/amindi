@@ -59,7 +59,7 @@ main {
   display: flex;
 }
 .weather-app-temperature {
-  font-size: 78px;
+  font-size: 76px;
   font-weight: bold;
 }
 .weather-app-unit {
