@@ -5,5 +5,4 @@ function handleSearch(event) {
   CityElement.innerHTML = searchInput.value;
 }
 let searchFormElement = document.querySelector("#search-form");
-
 searchFormElement.addEventListener("submit", handleSearch);
